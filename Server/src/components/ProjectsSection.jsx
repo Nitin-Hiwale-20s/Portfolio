@@ -187,7 +187,7 @@ const projectsData = [
       description: 'MERN Stack Portfolio: A responsive full-stack web portfolio built with MongoDB, Express, React, and Node.js. Showcases projects, skills, and real-world app functionality with interactive UI.',
         techStack: 'MERN Stack, Tailwind CSS',
     liveLink: '#',
-    githubLink: '#',
+    githubLink: 'https://github.com/Nitin-Hiwale-20s/Portfolio',
   },
     {
     title: 'Blog Application (MERN Stack)',
@@ -200,7 +200,7 @@ const projectsData = [
   {
     title: ' Old Portfolio ',
     imageUrl: 'https://static.resumegiants.com/wp-content/uploads/sites/25/2022/06/09105622/Professional-portfolio-1040x694.webp',
-    description: 'A tool that helps developers create and deploy their portfolio in minutes.',
+    description: 'A responsive personal portfolio website built using HTML, CSS, and JavaScript. It showcases my skills, projects, and contact information in a clean and modern design. Includes smooth scrolling, dark/light mode toggle, and a simple contact form.',
     techStack: 'HTML, CSS, Java Script',
     liveLink: '#',
     githubLink: 'https://github.com/Nitin-Hiwale-20s/Old-Portfolio',
