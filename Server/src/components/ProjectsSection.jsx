@@ -46,7 +46,7 @@ const projectsData = [
     title: 'Shri Chandika Mata Earth Movers Website',
     imageUrl: 'https://images.tractorjunction.com/Infrajunction-prod/jcb_3dx_backhoe_loader1686911730_2b5e36e8a3.jpg?format=webp&quality=40',
     description: 'A modern and responsive business website built using React.js, Tailwind CSS, and React Router. It showcases the company’s machinery services, customer reviews, and contact details with a clean and mobile-friendly design.',
-    techStack: ' React.js, Tailwind CSS, JavaScript, Vercel'',
+    techStack: 'React.js, Tailwind CSS, JavaScript, Vercel',
     liveLink: 'https://shri-chandika-mata-earth-movers-por.vercel.app/',
     githubLink: 'https://github.com/Nitin-Hiwale-20s/Shri-ChandikaMata-EarthMovers-Portfolio',
   },
