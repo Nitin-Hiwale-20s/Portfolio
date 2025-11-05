@@ -2,7 +2,7 @@ import React from 'react';
 
 const Resume = () => {
   const resumePdfLink =
-    "https://acrobat.adobe.com/id/urn:aaid:sc:AP:1eddda64-218c-4c95-b550-9fe8a3cc5aa8";
+    "https://acrobat.adobe.com/id/urn:aaid:sc:ap:a6a5113c-683f-4a73-839d-664c9014bff0";
 
   const profile = {
     name: "Nitin Rajesh Hiwale",
