@@ -31,7 +31,7 @@ const projectsData = [
     imageUrl: 'https://yt3.ggpht.com/n0kUfbJxuIFxgGjk5YrAlzRZljyKfWDCtpv-oQ9WeOdctzWrzteN1d1RkQ9Mjc2-q7bbhzaa_Q=s176-c-k-c0x00ffffff-no-rj',
       description: 'MERN Stack Portfolio: A responsive full-stack web portfolio built with MongoDB, Express, React, and Node.js. Showcases projects, skills, and real-world app functionality with interactive UI.',
         techStack: 'MERN Stack, Tailwind CSS',
-    liveLink: '#',
+    liveLink: 'https://nitin-hiwale-portfolio.vercel.app/',
     githubLink: 'https://github.com/Nitin-Hiwale-20s/Portfolio',
   },
     {
