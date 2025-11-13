@@ -35,12 +35,12 @@ const SkillsSection = () => {
             I build scalable web apps using modern technologies, from front-end
             to back-end and databases.
           </p>
-          <a
+          {/* <a
             href="projects"
             className="inline-block px-6 py-2 border border-gray-400 rounded-lg hover:bg-gray-100 transition text-gray-800 font-medium text-sm sm:text-base"
           >
             View My Projects &gt;
-          </a>
+          </a> */}
         </div>
 
         {/* Skills Grid */}
