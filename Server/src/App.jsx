@@ -10,6 +10,7 @@ import EducationSection from './components/EducationSection.jsx';
 import Resume from './components/Resume.jsx';
 import Footer from './components/Footer.jsx';
 import Contact from './components/Contact.jsx';
+import Experience from './components/Experiences.jsx';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
               <Hero />
               <LandingPage />
               <EducationSection />
+              <Experience/>
               <SkillsSection />
               <ProjectsSection />
               <Resume />
