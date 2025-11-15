@@ -1,69 +1,3 @@
-/* .Hello{
-    background-image: url(PortfolioBack.jpg);
-    height:700px;
-  }
-.container {
-    
-    text-align: center;
-    padding-top: 80px;
-    position: relative;
-    right: 250px;
-    
-  }
-
-
-  
-  .welcome {
-    font-size: 4rem;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    margin-bottom: 10px;
-    margin-top:130px;
-  }
-
-  .iam {
-    font-weight: bold;
-    color: #555;
-    letter-spacing: 3px;
-    margin: 10px 0;
-   
-  }
-  
-  .name,
-  .surname {
-    font-family: 'Brush Script MT', cursive;
-    font-size: 3rem;
-
-  }
-
-  .underline {
-    width: 80px;
-    height: 5px;
-    background-color: red;
-    margin: 15px auto;
-    border-radius: 10px;
-   
-  }
-  
-  .role {
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: #444;
-    margin-bottom:150px;
-  }
-   .circle-graphic {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(255,255,255,1) 40%, rgba(0,0,255,0.1) 100%);
-    position: absolute;
-    top: 100px;
-    right:50px;
-    box-shadow: 0 0 40px rgba(173, 216, 230, 0.4);
-    margin-top:100px;
-  } */
-
 
 
   .container {
@@ -98,7 +32,7 @@
 .underline {
   width: 80px;
   height: 5px;
-  background-color: #00ffff;
+  background-color: red;
   margin: 15px auto;
   border-radius: 10px;
 }

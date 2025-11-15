@@ -14,7 +14,7 @@ const Resume = () => {
     <div className="max-w-3xl mx-auto my-8 px-4 sm:px-6 md:px-8 py-20 bg-white shadow-lg rounded-xl border border-gray-200">
       
       {/* Header */}
-      <header className="text-center pb-4 border-b border-gray-300">
+      <header className="text-center pb-4 border-b border-gray-300"> 
         <h1 className="text-2xl sm:text-3xl font-bold text-blue-700">
           {profile.name}
         </h1>
