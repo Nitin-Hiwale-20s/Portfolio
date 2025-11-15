@@ -88,7 +88,7 @@ const EducationSection = () => {
         </div>
       </motion.div>
     </section>
-  );s
+  );
 };
 
 export default EducationSection;
