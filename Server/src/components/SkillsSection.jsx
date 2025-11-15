@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 const skillsData = [
   { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
@@ -24,33 +23,11 @@ const skillsData = [
 ];
 
 const SkillsSection = () => {
-
-  const cardVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: (index) => ({
-      opacity: 1,
-      y: 0,
-      transition: { delay: index * 0.08 }
-    }),
-  };
-
   return (
     <section className="bg-slate-50 py-14 px-4 md:px-10">
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12"
-      >
-        {/* Text Section */}
-        <motion.div 
-          className="md:w-1/2 text-center md:text-left"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        {/* Text Column */}
+        <div className="md:w-1/2 text-center md:text-left">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-900">
             My Professional <span className="text-blue-600">Skillset</span>.
           </h2>
@@ -58,26 +35,28 @@ const SkillsSection = () => {
             I build scalable web apps using modern technologies, from front-end
             to back-end and databases.
           </p>
-        </motion.div>
+         
+        </div>
 
-        {/* Skill Cards */}
+        {/* Skills Grid */}
         <div className="md:w-1/2 w-full grid grid-cols-3 sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-          {skillsData.map((skill, index) => (
-            <motion.div
+          {skillsData.map((skill) => (
+            <div
               key={skill.name}
               className="bg-white p-3 sm:p-4 rounded-xl flex flex-col items-center justify-center shadow-sm hover:shadow-lg hover:scale-105 transition-transform duration-300"
-              variants={cardVariants}
-              initial="hidden"
-              whileInView="visible"
-              custom={index}
-              viewport={{ once: true }}
             >
-              <img src={skill.logo} alt={skill.name} className="w-10 h-10 sm:w-12 sm:h-12 mb-2" />
-              <p className="text-xs sm:text-sm font-medium text-gray-700 text-center">{skill.name}</p>
-            </motion.div>
+              <img
+                src={skill.logo}
+                alt={skill.name}
+                className="w-10 h-10 sm:w-12 sm:h-12 mb-2"
+              />
+              <p className="text-xs sm:text-sm font-medium text-gray-700 text-center">
+                {skill.name}
+              </p>
+            </div>
           ))}
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };
