@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Resume = () => {
   const resumePdfLink =
-    "https://acrobat.adobe.com/id/urn:aaid:sc:AP:1eddda64-218c-4c95-b550-9fe8a3cc5aa8";
+    "https://acrobat.adobe.com/id/urn:aaid:sc:AP:933a7ff8-ebd1-4eb5-b93a-a033adfff4bc";
 
   const profile = {
     name: "Nitin Rajesh Hiwale",
