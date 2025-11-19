@@ -49,7 +49,7 @@ const projectsData = [
       "Full-stack blog platform with authentication, CRUD operations, posts & comment features using MERN.",
     techStack: "MERN, React Router, Express, MongoDB",
     liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/Nitin-Hiwale-20s/Blog-Application-MERN-Stack-",
   },
   {
     title: "Shri Chandika Mata Earth Movers Website",
