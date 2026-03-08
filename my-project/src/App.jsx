@@ -25,12 +25,12 @@ const App = () => {
             <>
               <Hero />
               <LandingPage />
-              <EducationSection />
+             
               <Experience/>
               <SkillsSection />
-              <Resume />
               <ProjectsSection />
-              
+               <EducationSection />
+               <Resume /><object data="" type=""></object>
               <ContactMe/>
             </>
           }
