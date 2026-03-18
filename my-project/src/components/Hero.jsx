@@ -108,7 +108,7 @@ const Hero = ({ darkMode }) => {
 
             {/* Resume Link */}
             <motion.a
-              href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:94194d31-33d1-45a6-b169-8bdc1982d7fe"
+              href="https://drive.google.com/file/d/1DUfcZIsMhC8ePoAkF3iCMpbTjZst030J/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
