@@ -67,13 +67,7 @@ const LandingPage = ({ darkMode }) => {
 
         {/* Call to Action Buttons */}
         <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-6 py-3 bg-orange-500 text-white font-bold rounded-lg shadow-lg hover:bg-orange-600 transition-all"
-          >
-            Hire Me
-          </motion.button>
+         
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
