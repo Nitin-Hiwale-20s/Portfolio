@@ -88,28 +88,35 @@ const Hero = ({ darkMode }) => {
           </motion.p>
 
           {/* Action Buttons */}
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 bg-orange-500 text-white font-bold rounded-full shadow-lg shadow-orange-500/30 hover:bg-orange-600 transition-all"
-            >
-              Contact Me
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className={`px-8 py-3 border-2 font-bold rounded-full transition-all ${
-                darkMode 
-                ? "border-white text-white hover:bg-white hover:text-black" 
-                : "border-black text-black hover:bg-black hover:text-white"
-              }`}
-            >
-              My Projects
-            </motion.button>
-          </div>
-        </motion.div>
-      </div>
+        {/* Action Buttons */}
+<div className="mt-10 flex flex-col sm:flex-row gap-5 justify-center items-center">
+  
+  {/* Project Button */}
+  <motion.button
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className={`px-8 py-3 border-2 font-bold rounded-full transition-all ${
+      darkMode 
+      ? "border-white text-white hover:bg-white hover:text-black" 
+      : "border-black text-black hover:bg-black hover:text-white"
+    }`}
+  >
+    My Projects 
+  </motion.button>
+
+  {/* Resume Button with Adobe Link */}
+  <motion.a
+    href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:1eddda64-218c-4c95-b550-9fe8a3cc5aa8"
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-full flex items-center gap-2 shadow-lg shadow-orange-500/30 transition-all cursor-pointer"
+  >
+    View Resume <FiDownload size={18} />
+  </motion.a>
+
+</div>
 
       {/* Subtle Bottom Glow */}
       <div className={`absolute bottom-0 w-full h-24 bg-gradient-to-t transition-colors duration-500 ${
