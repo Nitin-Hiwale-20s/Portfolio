@@ -1,6 +1,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiDownload } from "react-icons/fi"; // Check kar he install ahe ka
+import { FiDownload, FiArrowRight } from "react-icons/fi";
+import { Link } from "react-router-dom"; // Link import karayla visaru nako
 import PortfolioBack from "../assets/Black1.jpg";
 
 const Hero = ({ darkMode }) => {
@@ -87,21 +88,25 @@ const Hero = ({ darkMode }) => {
             </span>
           </motion.p>
 
-          {/* 3. Action Buttons (Properly Nested) */}
+          {/* 3. Action Buttons */}
           <div className="mt-10 flex flex-col sm:flex-row gap-5 justify-center items-center">
             
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className={`px-8 py-3 border-2 font-bold rounded-full transition-all ${
-                darkMode 
-                ? "border-white text-white hover:bg-white hover:text-black" 
-                : "border-black text-black hover:bg-black hover:text-white"
-              }`}
-            >
-              My Projects 
-            </motion.button>
+            {/* Project Link - Path="/projects" */}
+            <Link to="/projects">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className={`px-8 py-3 border-2 font-bold rounded-full transition-all flex items-center gap-2 ${
+                  darkMode 
+                  ? "border-white text-white hover:bg-white hover:text-black" 
+                  : "border-black text-black hover:bg-black hover:text-white"
+                }`}
+              >
+                My Projects <FiArrowRight />
+              </motion.button>
+            </Link>
 
+            {/* Resume Link */}
             <motion.a
               href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:1eddda64-218c-4c95-b550-9fe8a3cc5aa8"
               target="_blank"
@@ -110,7 +115,7 @@ const Hero = ({ darkMode }) => {
               whileTap={{ scale: 0.95 }}
               className="px-8 py-3 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-full flex items-center gap-2 shadow-lg shadow-orange-500/30 transition-all cursor-pointer"
             >
-              View Resume 
+              View Resume
             </motion.a>
 
           </div>
