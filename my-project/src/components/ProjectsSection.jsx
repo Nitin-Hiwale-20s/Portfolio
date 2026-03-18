@@ -1,155 +1,175 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Github, ExternalLink } from "lucide-react"; // Icons sathi
 
 const projectsData = [
   {
-    title: "Weather Website",
-    imageUrl:
-      "https://nordicapis.com/wp-content/uploads/6-Best-Free-and-Paid-Weather-APIs-1024x576.png",
-    description:
-      "A React weather app that shows real-time weather updates and 5-day forecast using OpenWeatherMap API.",
-    techStack: "React, API, Tailwind",
-    liveLink: "https://weather-app-using-react-hazel.vercel.app/",
-    githubLink: "https://github.com/Nitin-Hiwale-20s/Weather-App-using-React",
+    title: "Shri Chandika Mata Earth Movers",
+    description: "A professional business website showcasing services, contact, and business identity using modern UI layouts.",
+    techStack: "React, Tailwind, JavaScript, Vercel",
+    liveLink: "https://shri-chandika-mata-earth-movers-por.vercel.app/",
+    githubLink: "https://github.com/Nitin-Hiwale-20s/Shri-ChandikaMata-EarthMovers-Portfolio",
+    imageUrl: "https://images.tractorjunction.com/Infrajunction-prod/jcb_3dx_backhoe_loader1686911730_2b5e36e8a3.jpg?format=webp&quality=40"
   },
   {
-    title: "JCB Web Clone",
-    imageUrl:
-      "https://images.tractorjunction.com/Infrajunction-prod/jcb_3dx_backhoe_loader1686911730_2b5e36e8a3.jpg?format=webp&quality=40",
-    description:
-      "A fully responsive JCB company website clone supporting all screen devices with modern UI and clean layout.",
-    techStack: "HTML5, CSS, JavaScript, Bootstrap",
-    liveLink: "#",
-    githubLink: "https://github.com/Nitin-Hiwale-20s/JCB-Website-Clone",
-  },
-  {
-    title: "Zerodha Web Clone",
-    imageUrl: "https://zerodha.tech/static/images/product-mashup-2020-04.png",
-    description:
-      "A responsive clone of the Zerodha trading platform built using React and modern UI practices.",
-    techStack: "React, JavaScript, Tailwind",
+    title: "MERN Blog Application",
+    description: "Full-stack blog platform with authentication, CRUD operations, and post management features.",
+    techStack: "MERN, React Router, Express, MongoDB",
     liveLink: "#",
     githubLink: "#",
+    imageUrl: "https://media.istockphoto.com/id/922745190/photo/blogging-blog-concepts-ideas-with-worktable.jpg?s=612x612&w=0&k=20&c=xR2vOmtg-N6Lo6_I269SoM5PXEVRxlgvKxXUBMeMC_A="
+  },
+  {
+    title: "NextMart Grocery Platform",
+    description: "Full-stack grocery application where users can browse products, manage carts, and place orders.",
+    techStack: "Next.js, Node.js, Express.js, MongoDB",
+    liveLink: "#",
+    githubLink: "https://github.com/Nitin-Hiwale-20s",
+    imageUrl: "https://cdn-icons-png.flaticon.com/512/3081/3081559.png"
+  },
+  {
+    title: "Weather Dashboard",
+    description: "React-based weather app featuring real-time data and a 5-day forecast via OpenWeatherMap API.",
+    techStack: "React, API, Tailwind CSS",
+    liveLink: "https://weather-app-using-react-hazel.vercel.app/",
+    githubLink: "https://github.com/Nitin-Hiwale-20s/Weather-App-using-React",
+    imageUrl: "https://nordicapis.com/wp-content/uploads/6-Best-Free-and-Paid-Weather-APIs-1024x576.png"
   },
   {
     title: "Portfolio (MERN)",
-    imageUrl:
-      "https://yt3.ggpht.com/n0kUfbJxuIFxgGjk5YrAlzRZljyKfWDCtpv-oQ9WeOdctzWrzteN1d1RkQ9Mjc2-q7bbhzaa_Q=s176-c-k-c0x00ffffff-no-rj",
-    description:
-      "A full-stack MERN portfolio with smooth UI, responsive layout and professional project showcase system.",
+    description: "Personal full-stack portfolio showcasing projects with a responsive layout and smooth animations.",
     techStack: "MERN, Tailwind CSS, Vercel",
     liveLink: "https://nitin-hiwale-portfolio.vercel.app/",
     githubLink: "https://github.com/Nitin-Hiwale-20s/Portfolio",
+    imageUrl: "https://img.freepik.com/free-vector/portfolio-concept-illustration_114360-126.jpg"
   },
   {
-    title: "Blog Application (MERN)",
-    imageUrl:
-      "https://media.istockphoto.com/id/922745190/photo/blogging-blog-concepts-ideas-with-worktable.jpg?s=612x612&w=0&k=20&c=xR2vOmtg-N6Lo6_I269SoM5PXEVRxlgvKxXUBMeMC_A=",
-    description:
-      "Full-stack blog platform with authentication, CRUD operations, posts & comment features using MERN.",
-    techStack: "MERN, React Router, Express, MongoDB",
+    title: "JCB Web Clone",
+    description: "Fully responsive clone of a corporate machinery website with a clean, modern UI structure.",
+    techStack: "HTML5, CSS3, JavaScript, Bootstrap",
     liveLink: "#",
-    githubLink: "https://github.com/Nitin-Hiwale-20s/Blog-Application-MERN-Stack-",
+    githubLink: "https://github.com/Nitin-Hiwale-20s/JCB-Website-Clone",
+    imageUrl: "https://images.tractorjunction.com/Infrajunction-prod/jcb_3dx_backhoe_loader1686911730_2b5e36e8a3.jpg?format=webp&quality=40"
   },
   {
-    title: "Shri Chandika Mata Earth Movers Website",
-    imageUrl:
-      "https://images.tractorjunction.com/Infrajunction-prod/jcb_3dx_backhoe_loader1686911730_2b5e36e8a3.jpg?format=webp&quality=40",
-    description:
-      "A professional business website built using React & Tailwind showcasing services, contact, and business identity.",
-    techStack: "React, Tailwind CSS, JavaScript, Vercel",
-    liveLink:
-      "https://shri-chandika-mata-earth-movers-por.vercel.app/",
-    githubLink:
-      "https://github.com/Nitin-Hiwale-20s/Shri-ChandikaMata-EarthMovers-Portfolio",
-  },
+    title: "Zerodha Web Clone",
+    description: "A professional-grade clone of the Zerodha trading platform focusing on high-fidelity UI components.",
+    techStack: "React, JavaScript, Tailwind CSS",
+    liveLink: "#",
+    githubLink: "#",
+    imageUrl: "https://zerodha.tech/static/images/product-mashup-2020-04.png"
+  }
 ];
 
-const ProjectsSection = () => {
+const ProjectsSection = ({ darkMode }) => {
   return (
-    <section className="w-full bg-slate-50 py-12 md:py-24 text-center">
-      <motion.h2
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="text-3xl sm:text-4xl font-bold text-gray-800 mb-2"
-      >
-        My Projects
-      </motion.h2>
+    <section 
+      className={`py-24 transition-colors duration-500 ${
+        darkMode ? "bg-[#0a0a0c]" : "bg-orange-50/20"
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Heading Section */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="text-center mb-16"
+        >
+          <h2 className={`text-4xl md:text-5xl font-black mb-4 ${
+            darkMode ? "text-white" : "text-gray-900"
+          }`}>
+            My Featured <span className="text-orange-500">Projects</span>
+          </h2>
+          <div className="w-20 h-1.5 bg-gradient-to-r from-orange-500 to-yellow-400 mx-auto rounded-full shadow-lg shadow-orange-500/20"></div>
+          <p className={`mt-4 text-lg max-w-2xl mx-auto transition-colors duration-500 ${
+            darkMode ? "text-gray-400" : "text-gray-500"
+          }`}>
+            Explore my latest web development work, ranging from full-stack MERN apps to modern UI clones.
+          </p>
+        </motion.div>
 
-      <motion.p
-        initial={{ opacity: 0, y: -10 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.1 }}
-        viewport={{ once: true }}
-        className="text-gray-600 mb-8 sm:mb-12"
-      >
-        Here are some of the projects I've worked on.
-      </motion.p>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        {projectsData.map((project, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, scale: 0.9, y: 30 }}
-            whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.15 }}
-            viewport={{ once: true }}
-            whileHover={{ scale: 1.04 }}
-            className="relative p-6 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-400 text-white shadow-lg overflow-hidden"
-          >
-            <div className="absolute top-0 left-0 -translate-x-1/4 -translate-y-1/4 w-48 h-48 bg-blue-600/70 rounded-full blur-2xl"></div>
-
-            <div className="relative z-10">
-              <div className="bg-blue-600/80 rounded-lg p-2 mb-4 text-center">
-                <h3 className="text-xl font-bold">{project.title}</h3>
-              </div>
-
-              <div className="flex flex-col items-center gap-4 text-left sm:flex-row sm:items-start">
-                <img
-                  src={project.imageUrl}
-                  alt={project.title}
-                  className="w-28 h-28 rounded-full border-4 border-cyan-300 object-cover flex-shrink-0"
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {projectsData.map((project, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -10 }}
+              className={`group relative rounded-[2.5rem] p-5 border transition-all duration-500 ${
+                darkMode 
+                ? "bg-white/5 border-white/10 shadow-2xl hover:bg-white/10" 
+                : "bg-white border-orange-100 shadow-xl shadow-orange-100/30"
+              }`}
+            >
+              {/* Image Container */}
+              <div className="relative overflow-hidden rounded-[1.8rem] h-52 mb-6">
+                <img 
+                  src={project.imageUrl} 
+                  alt={project.title} 
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                 />
-                <div className="flex-grow text-center sm:text-left">
-                  <p className="text-sm leading-snug">{project.description}</p>
-                  <p className="mt-2 text-sm">
-                    <span className="font-bold">Tech Stack: </span>
-                    {project.techStack}
-                  </p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                  <span className="text-white text-xs font-bold uppercase tracking-wider">View Details</span>
                 </div>
               </div>
+              
+              <h3 className={`text-xl font-black mb-3 transition-colors duration-500 ${
+                darkMode ? "text-white" : "text-gray-900"
+              }`}>
+                {project.title}
+              </h3>
+              
+              <p className={`text-sm mb-6 line-clamp-2 transition-colors duration-500 ${
+                darkMode ? "text-gray-400" : "text-gray-600"
+              }`}>
+                {project.description}
+              </p>
+              
+              {/* Tech Stack Tags */}
+              <div className="flex flex-wrap gap-2 mb-8">
+                {project.techStack.split(", ").map((tech) => (
+                  <span key={tech} className={`px-3 py-1 text-[10px] font-black uppercase rounded-lg border transition-all duration-500 ${
+                    darkMode 
+                    ? "bg-orange-500/10 border-orange-500/30 text-orange-400" 
+                    : "bg-orange-50 border-orange-100 text-orange-600"
+                  }`}>
+                    {tech}
+                  </span>
+                ))}
+              </div>
 
-              <div className="mt-5 flex justify-between items-center">
-                <div className="flex gap-4">
-                  {project.githubLink &&
-                    project.githubLink !== "#" && (
-                      <a
-                        href={project.githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:scale-110 transition-transform"
-                      >
-                        🔗 GitHub
-                      </a>
-                    )}
-                </div>
-
-                {project.liveLink && project.liveLink !== "#" && (
-                  <a
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-1.5 bg-cyan-200/50 text-white text-sm font-semibold rounded-full hover:bg-cyan-200/70 transition-colors"
+              {/* Action Buttons */}
+              <div className="flex items-center justify-between pt-5 border-t border-gray-100/10 transition-colors duration-500">
+                {project.githubLink !== "#" ? (
+                  <a 
+                    href={project.githubLink} 
+                    target="_blank" 
+                    rel="noreferrer"
+                    className={`flex items-center gap-2 text-sm font-bold transition-colors ${
+                      darkMode ? "text-gray-400 hover:text-white" : "text-gray-500 hover:text-orange-600"
+                    }`}
                   >
-                    Live Demo
+                    <Github size={18} /> Code
+                  </a>
+                ) : <span className="text-xs text-gray-500 italic">Code Private</span>}
+                
+                {project.liveLink !== "#" && (
+                  <a 
+                    href={project.liveLink} 
+                    target="_blank" 
+                    rel="noreferrer"
+                    className="flex items-center gap-1 text-sm font-black text-orange-500 hover:text-orange-600 transition-colors"
+                  >
+                    Live Demo <ExternalLink size={16} />
                   </a>
                 )}
               </div>
-            </div>
-          </motion.div>
-        ))}
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );

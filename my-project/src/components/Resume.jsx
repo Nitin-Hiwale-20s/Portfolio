@@ -1,84 +1,101 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { FileText, Eye, ExternalLink, Sparkles } from "lucide-react";
 
-const Resume = () => {
+const Resume = ({ darkMode }) => {
   const resumePdfLink =
-    "https://acrobat.adobe.com/id/urn:aaid:sc:AP:933a7ff8-ebd1-4eb5-b93a-a033adfff4bc";
+    "https://acrobat.adobe.com/id/urn:aaid:sc:AP:1eddda64-218c-4c95-b550-9fe8a3cc5aa8";
 
   const profile = {
     name: "Nitin Rajesh Hiwale",
     title:
-      "Full-Stack Developer | MERN Stack | Java & DSA Enthusiast | JavaScript & React.js | 3rd Year Computer Science Student",
-  };
-
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = resumePdfLink;
-    link.download = "Nitin_Hiwale_Resume.pdf";
-    link.click();
+      "Full-Stack Developer | MERN Stack | Java & DSA Enthusiast | 3rd Year CS Student",
   };
 
   return (
-    <motion.div
-      className="max-w-3xl mx-auto my-8 px-4 sm:px-6 md:px-8 py-20 bg-white shadow-lg rounded-xl border border-gray-200"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, type: "spring" }}
-      viewport={{ once: true }}
-    >
-      {/* Header */}
-      <header className="text-center pb-4 border-b border-gray-300">
-        <motion.h1
-          className="text-2xl sm:text-3xl font-bold text-blue-700"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-        >
-          {profile.name}
-        </motion.h1>
+    <section className={`py-24 px-6 transition-colors duration-500 ${
+      darkMode ? "bg-[#0a0a0c]" : "bg-orange-50/20"
+    }`}>
+      <motion.div
+        className={`max-w-3xl mx-auto p-10 md:p-16 rounded-[3.5rem] border transition-all duration-500 relative overflow-hidden ${
+          darkMode 
+          ? "bg-white/5 border-white/10 shadow-2xl shadow-black" 
+          : "bg-white border-orange-100 shadow-2xl shadow-orange-200/40"
+        }`}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, type: "spring" }}
+        viewport={{ once: true }}
+      >
+        {/* Decorative Glows */}
+        <div className="absolute -top-20 -right-20 w-64 h-64 bg-orange-500/5 rounded-full blur-[100px] pointer-events-none" />
+        <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-yellow-500/5 rounded-full blur-[100px] pointer-events-none" />
 
-        <motion.h2
-          className="text-sm sm:text-base md:text-lg text-gray-600 mt-2 leading-snug"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.45 }}
-        >
-          {profile.title}
-        </motion.h2>
-      </header>
+        <div className="relative z-10 flex flex-col items-center text-center">
+          
+          {/* Top Badge */}
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            className="mb-8 px-4 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-500 text-[10px] font-black uppercase tracking-[0.2em] flex items-center gap-2"
+          >
+            <Sparkles size={14} /> Professional CV
+          </motion.div>
 
-      {/* PDF Resume Buttons */}
-      <section className="text-center my-6 flex flex-col sm:flex-row justify-center gap-4">
-        
-        {/* View Button */}
-        <motion.a
-          href={resumePdfLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-5 sm:px-6 rounded-full text-sm sm:text-base shadow-md"
-          whileHover={{ scale: 1.07, boxShadow: "0px 4px 12px rgba(0,0,0,0.20)" }}
-          whileTap={{ scale: 0.95 }}
-        >
-          📄 View Resume
-        </motion.a>
+          {/* Header Area */}
+          <header className="mb-12">
+            <motion.h1
+              className={`text-4xl md:text-6xl font-black mb-6 tracking-tighter transition-colors duration-500 ${
+                darkMode ? "text-white" : "text-gray-900"
+              }`}
+            >
+              Nitin <span className="text-orange-500">Hiwale</span>
+            </motion.h1>
 
-        {/* Download Button */}
-        <motion.button
-          onClick={handleDownload}
-          className="inline-block bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-5 sm:px-6 rounded-full text-sm sm:text-base shadow-md"
-          whileHover={{ scale: 1.07, boxShadow: "0px 4px 12px rgba(0,0,0,0.20)" }}
-       
-        >
-         
-        </motion.button>
-      </section>
+            <motion.p
+              className={`text-lg md:text-xl font-bold max-w-xl mx-auto leading-tight mb-6 transition-colors duration-500 ${
+                darkMode ? "text-gray-300" : "text-gray-700"
+              }`}
+            >
+              {profile.title}
+            </motion.p>
+            
+            <div className="w-16 h-1 bg-gradient-to-r from-orange-500 to-yellow-400 mx-auto rounded-full" />
+          </header>
 
-      <p className="text-xs sm:text-sm text-gray-500 text-center mt-3">
-        Tap above to view or directly download the complete resume.
-      </p>
+          {/* Action Button: Only View */}
+          <div className="w-full max-w-sm">
+            <motion.a
+              href={resumePdfLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative flex items-center justify-center gap-3 w-full bg-orange-500 hover:bg-orange-600 text-white font-black py-5 px-10 rounded-[2rem] shadow-xl shadow-orange-500/40 transition-all overflow-hidden"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              {/* Shine Animation */}
+              <div className="absolute inset-0 w-1/2 h-full bg-white/20 skew-x-[-25deg] -translate-x-full group-hover:translate-x-[250%] transition-transform duration-700 ease-in-out" />
+              
+              <Eye size={22} className="group-hover:scale-110 transition-transform" />
+              <span className="text-lg">View Full Resume</span>
+            </motion.a>
+          </div>
 
-      <hr className="my-4 border-gray-200" />
-    </motion.div>
+          {/* Footer Note */}
+          <motion.div 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            className={`mt-12 flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.15em] transition-colors duration-500 ${
+              darkMode ? "text-gray-500" : "text-gray-400"
+            }`}
+          >
+            <ExternalLink size={14} className="text-orange-500" />
+            Verified Adobe Document
+          </motion.div>
+        </div>
+      </motion.div>
+    </section>
   );
 };
 
