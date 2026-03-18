@@ -4,7 +4,7 @@ import { FileText, Eye, ExternalLink, Sparkles } from "lucide-react";
 
 const Resume = ({ darkMode }) => {
   const resumePdfLink =
-    "https://acrobat.adobe.com/id/urn:aaid:sc:AP:1eddda64-218c-4c95-b550-9fe8a3cc5aa8";
+    "https://drive.google.com/file/d/1DUfcZIsMhC8ePoAkF3iCMpbTjZst030J/view?usp=drive_link";
 
   const profile = {
     name: "Nitin Rajesh Hiwale",
