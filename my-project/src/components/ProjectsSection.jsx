@@ -15,7 +15,7 @@ const projectsData = [
     title: "MERN Blog Application",
     description: "Full-stack blog platform with authentication, CRUD operations, and post management features.",
     techStack: "MERN, React Router, Express, MongoDB",
-    liveLink: "#",
+    liveLink: "https://drive.google.com/file/d/1jcq8EmQGsTfytel8TypkmCTkHq7V9iLZ/view",
     githubLink: "#",
     imageUrl: "https://media.istockphoto.com/id/922745190/photo/blogging-blog-concepts-ideas-with-worktable.jpg?s=612x612&w=0&k=20&c=xR2vOmtg-N6Lo6_I269SoM5PXEVRxlgvKxXUBMeMC_A="
   },
